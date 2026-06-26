@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "removeComments": false,
+    "noEmitOnError": true,
+    "pretty": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": false,
+    "sourceMap": true
+  },
+  // "include": ["src/app.ts", "src/test.ts"],
+  "exclude": ["src/**/*.test.ts"]
+}
