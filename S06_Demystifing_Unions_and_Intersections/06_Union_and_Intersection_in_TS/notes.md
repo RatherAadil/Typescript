@@ -17,8 +17,6 @@ A U C = A
 A ∩ C = {}
 ```
 
----
-
 ### `T1` - Union with a Literal Type
 
 ```ts
@@ -33,7 +31,6 @@ Since `'Hi'` is already a valid `string`, string U Hi is still string.
 type T1 = string;
 ```
 
----
 
 ### `T2` - Intersection with a Literal Type
 
@@ -49,7 +46,6 @@ type T2 = string & 'HI';
 type T2 = 'HI';
 ```
 
----
 
 ### `T3` - Intersection with Boolean Literal
 
@@ -65,7 +61,6 @@ The only common value between `boolean` and `false` is `false`.
 type T3 = false;
 ```
 
----
 
 ### `T4` - Union with Boolean Literal
 
@@ -81,7 +76,6 @@ type T4 = boolean | false;
 type T4 = boolean;
 ```
 
----
 
 ### `T5` and `T6` - Using `Exclude`
 
@@ -99,7 +93,6 @@ type T5 = false;
 type T6 = true;
 ```
 
----
 
 ### `T7` - Union with a Template Literal Type
 
@@ -115,7 +108,6 @@ Every template literal like `Hi, John` is already a `string`.
 type T7 = string;
 ```
 
----
 
 ### `T8` - Intersection with a Template Literal Type
 
@@ -131,7 +123,6 @@ Common between string and template literal is `Template Literal` Only.
 type T8 = `Hi, ${string}`;
 ```
 
----
 
 ### `T9` - Union with a Number Literal
 
@@ -147,7 +138,6 @@ type T9 = number | 90;
 type T9 = number;
 ```
 
----
 
 ### `T10` - Intersection with a Number Literal
 
@@ -163,7 +153,6 @@ The only common value is `90`.
 type T10 = 90;
 ```
 
----
 
 ### `T11` - Intersection with a Union
 
@@ -179,7 +168,6 @@ Only `string` exists in both types.
 type T11 = string;
 ```
 
----
 
 ### `T12` - Intersection of Two Unions
 
@@ -195,7 +183,6 @@ The only common type is `string`.
 type T12 = string;
 ```
 
----
 
 ### `T13` - Union of Two Unions
 
@@ -211,7 +198,6 @@ Union combines all unique types.
 type T13 = string | number | boolean;
 ```
 
----
 
 ### `T14` - Intersection of Larger Unions
 
@@ -227,7 +213,6 @@ The common types are `string` and `boolean`.
 type T14 = string | boolean;
 ```
 
----
 
 ### `T15` - Intersection with `unknown`
 
@@ -243,7 +228,6 @@ type T15 = unknown & string;
 type T15 = string;
 ```
 
----
 
 ### `T16` - Union with `unknown`
 
@@ -259,7 +243,6 @@ type T16 = unknown | string;
 type T16 = unknown;
 ```
 
----
 
 ### `T17` - Intersection of Different Primitive Types
 
@@ -275,7 +258,6 @@ A value cannot be both a `number` and a `string`.
 type T17 = never;
 ```
 
----
 
 ### `T18` - Intersection of Different Literal Types
 
@@ -291,7 +273,6 @@ A value cannot be both `5` and `9`.
 type T18 = never;
 ```
 
----
 
 ## Summary
 
